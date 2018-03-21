@@ -1,0 +1,21 @@
+
+#see https://serverless.com/framework/docs/
+
+service: hq-serverless
+
+provider:
+  name: aws
+  runtime: nodejs6.10
+  region: us-east-1
+  profile: serverless_admin
+  timeout: 20
+  versionFunctions: false
+
+functions:
+  example: 
+    handler: handler.example
+    events:
+      - http:
+          path: example
+          method: post
+          cors: true

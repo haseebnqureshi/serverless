@@ -1,0 +1,22 @@
+{
+  "name": "hq-serverless",
+  "version": "0.1.0",
+  "description": "Starter opinionated Serverless project",
+  "main": "handler.js",
+  "scripts": {
+    "deploy-test": "sls deploy --stage test",
+    "deploy-live": "sls deploy --stage live",
+    "info-test": "sls info --stage test",
+    "info-live": "sls info --stage live"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/haseebnqureshi/serverless.git"
+  },
+  "author": "Haseeb Qureshi <haseeb.n.qureshi@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "underscore": "^1.8.3"
+  }
+}
